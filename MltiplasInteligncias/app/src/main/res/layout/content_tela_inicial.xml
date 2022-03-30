@@ -1,0 +1,1212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutPrincipalId"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TelaInicial"
+    tools:layout_editor_absoluteY="81dp"
+    tools:showIn="@layout/app_bar_tela_inicial">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutDados"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="68dp"
+            android:text="@string/digiNome"
+            android:textSize="36sp"
+            app:fontFamily="@font/hammersmith_one"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="@string/seu_nome"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <requestFocus
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/gradishape"
+            android:text="@string/mostrar_resultado"
+            android:textColor="@color/aklsda"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edNome" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutComplete"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/round_rect_shape"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textInteliResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:padding="10dp"
+            android:text="@string/finalizado"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager" />
+
+        <TextView
+            android:id="@+id/textInteliResult2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:text="@string/finalizado"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInteliResult" />
+
+        <android.support.v4.view.ViewPager
+
+            android:id="@+id/viewPager"
+            android:layout_width="wrap_content"
+            android:layout_height="219dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/SliderDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/viewPager"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/viewPager"></LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutLoadingId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.38" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.62" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.57" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.43" />
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:src="@drawable/loadding"
+            app:layout_constraintBottom_toTopOf="@+id/guideline14"
+            app:layout_constraintEnd_toStartOf="@+id/guideline12"
+            app:layout_constraintStart_toStartOf="@+id/guideline11"
+            app:layout_constraintTop_toTopOf="@+id/guideline15" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutTermosSubId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/scrollViewTermosId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateIds,NotSibling">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TermosId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="@string/direitos"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/hammersmith_one"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutEquipeId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/iquipe_app_mobile" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:text="@string/zoa"
+            android:textSize="8sp"
+            app:fontFamily="@font/hammersmith_one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="SmallSp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutSobreId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollViewTermosId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="DuplicateIds,NotSibling">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TermosId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="@string/termosUso"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/hammersmith_one"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutTermosId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ScrollView
+            android:id="@+id/scrollViewTermosId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/checkTermosId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.8"
+            tools:ignore="DuplicateIds,NotSibling">
+
+            <LinearLayout
+                android:id="@+id/layterm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TermosId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="@string/termosUso"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/hammersmith_one"
+                    tools:ignore="DuplicateIds" />
+            </LinearLayout>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/checkTermosId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:text="@string/caixaConf"
+            app:layout_constraintBottom_toTopOf="@+id/botaoTermosId"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/scrollViewTermosId" />
+
+        <Button
+            android:id="@+id/botaoTermosId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/gradishape"
+            android:text="@string/botaoConf"
+            android:textColor="@color/brk"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layoutPerguntasId"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.98" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.87" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.83" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.73" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.71" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.52" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.35" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.84" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.96" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.7" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.56" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.42" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.28" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.140625" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guidelinedock9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/bloc_tex_titil"
+            app:layout_constraintBottom_toBottomOf="@id/guidelinedock14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imagemId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/perguntasId"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock3"
+            app:layout_constraintStart_toStartOf="@id/guidelinedock6"
+            app:srcCompat="@drawable/icone_pergunta" />
+
+        <Button
+            android:id="@+id/botaoC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradishape"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="@string/continuar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
+            android:textColor="@color/brk"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/guideline10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guidelinedock11" />
+
+        <ImageButton
+            android:id="@+id/botaoEtapa1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/transp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guidelinedock" />
+
+        <ImageButton
+            android:id="@+id/botaoEtapa2"
+            style="@style/Base.Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transp"
+            android:src="@android:drawable/screen_background_light_transparent"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock6"
+            app:layout_constraintStart_toEndOf="@+id/botaoEtapa1"
+            app:layout_constraintTop_toTopOf="@+id/guidelinedock" />
+
+        <ImageButton
+            android:id="@+id/botaoEtapa3"
+            style="@style/Base.Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock5"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock6"
+            app:layout_constraintTop_toTopOf="@+id/guidelinedock" />
+
+        <ImageButton
+            android:id="@+id/botaoEtapa4"
+            style="@style/Base.Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock4"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock5"
+            app:layout_constraintTop_toTopOf="@+id/guidelinedock" />
+
+        <ImageButton
+            android:id="@+id/botaoEtapa5"
+            style="@style/Base.Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transp"
+            android:contentDescription="@string/todo"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock3"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock4"
+            app:layout_constraintTop_toTopOf="@+id/guidelinedock" />
+
+        <ImageButton
+            android:id="@+id/botaoEtapa6"
+            style="@style/Base.Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock2"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock3"
+            app:layout_constraintTop_toTopOf="@+id/guidelinedock" />
+
+        <ImageButton
+            android:id="@+id/botaoEtapa7"
+            style="@style/Base.Widget.AppCompat.ImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/transp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/guideline5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock2"
+            app:layout_constraintTop_toTopOf="@+id/guidelinedock" />
+
+        <SeekBar
+            android:id="@+id/opcoesSeekId"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:max="6"
+            android:progress="0"
+            app:layout_constraintBottom_toBottomOf="@+id/guideline12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock13" />
+
+        <TextView
+            android:id="@+id/etapaAtualId"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Quando estou no trabalho ou escola prefiro?"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16sp"
+            app:fontFamily="@font/hammersmith_one"
+            app:layout_constraintBottom_toTopOf="@+id/imagemId"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock2"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/perguntasId"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+
+            android:text="PERGUNTA"
+            app:fontFamily="@font/hammersmith_one"
+            app:layout_constraintBottom_toTopOf="@+id/guidelinedock16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock15" />
+
+
+        <ImageView
+            android:id="@+id/paletaId"
+            android:layout_width="345dp"
+            android:layout_height="63dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/banner_emiji"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <LinearLayout
+            android:id="@+id/emoInfla1"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+            <ImageView
+                android:id="@+id/emojin11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoInfla2"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+
+            <ImageView
+                android:id="@+id/emojin21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin22"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoInfla3"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+            <ImageView
+                android:id="@+id/emojin31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin33"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoInfla4"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+            <ImageView
+                android:id="@+id/emojin41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin44"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoInfla5"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+            <ImageView
+                android:id="@+id/emojin51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin55"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoInfla6"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+            <ImageView
+                android:id="@+id/emojin61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin66"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoInfla7"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+            <ImageView
+                android:id="@+id/emojin71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin72"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin73"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin74"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin76"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin77"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emoInfla0"
+            android:layout_width="277dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/transp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/guidelinedock13"
+            app:layout_constraintEnd_toStartOf="@+id/guidelinedock8"
+            app:layout_constraintStart_toStartOf="@+id/guidelinedock9"
+            app:layout_constraintTop_toBottomOf="@+id/guidelinedock14">
+
+            <ImageView
+                android:id="@+id/emojin01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji1" />
+
+            <ImageView
+                android:id="@+id/emojin02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji2" />
+
+            <ImageView
+                android:id="@+id/emojin03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji3" />
+
+            <ImageView
+                android:id="@+id/emojin04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji4" />
+
+            <ImageView
+                android:id="@+id/emojin05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji5" />
+
+            <ImageView
+                android:id="@+id/emojin06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji6" />
+
+            <ImageView
+                android:id="@+id/emojin07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/emoji7" />
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5742093" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85" />
+
+</android.support.constraint.ConstraintLayout>

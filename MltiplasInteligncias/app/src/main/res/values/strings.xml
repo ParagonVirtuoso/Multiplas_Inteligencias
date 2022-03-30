@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Inteligências Múltiplas</string>
+    <string name="title_activity_tela_inicial">"FURY"</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="termosUso"> Com base na teoria das inteligências múltiplas de Howard Gardner,
+responda as perguntas e descubra qual ou quais são os tipos de
+inteligências que predominam em você.
+são dez etapas a percorrer. Dê uma nota para cada frase de acordo com a
+identificação com as habilidades ou preferências descritas.
+Determine seu nível de afinidade com as questões, classificando-as
+com notas de 1 a 7, sendo:1 como a ultima preferência e 7 como a
+Primeira, Não use notas repetidas numa mesma etapa,
+Atenção: não há uma resposta correta,
+ Porque cada um de nos temos suas próprias escolhas e competências.
+    </string>
+
+    <string name="caixaConf">COMPREENDI OS TERMOS</string>
+    <string name="botaoConf">INICIAR TESTE</string>
+    <string name="not_log_in">Não Foi Possivel Iniciar</string>
+    <string name="log_out">Sair</string>
+    <string name="tituloEtapa1">Coisas Que Mais Gosto De Fazer</string>
+    <string name="pergunta1Etapa1">Praticar Esportes</string>
+    <string name="pergunta2Etapa1">Dirigir</string>
+    <string name="pergunta3Etapa1">Compartilhar Atividades</string>
+    <string name="pergunta4Etapa1">Refletir sobre meus sentimentos</string>
+    <string name="pergunta5Etapa1">Debater Ideias</string>
+    <string name="pergunta6Etapa1">Ordenar coisas</string>
+    <string name="pergunta7Etapa1">Cantar</string>
+    <string name="tituloEtapa2">Tenho Facilidade Em</string>
+    <string name="pergunta1Etapa2">Aprender Novos Esportes?</string>
+    <string name="pergunta2Etapa2">Executar Tarefas Delicadas?</string>
+    <string name="pergunta3Etapa2">Trabalhar Em Equipe</string>
+    <string name="pergunta4Etapa2">Analisar Meus Sentimentos</string>
+    <string name="pergunta5Etapa2">Contar Historias E Fatos</string>
+    <string name="pergunta6Etapa2">Construir E Organizar Planilhas</string>
+    <string name="pergunta7Etapa2">Tocar Instrumentos</string>
+    <string name="digiNome">Digite Seu Nome</string>
+    <string name="naorevogar_acesso">Não Foi Possivel Revogar o Acesso</string>
+    <string name="naoFechar_conta">Não Foi Possivel Fechar Conta</string>
+    <string name="not_firebase_auth">Não Foi Possivel Autenticar Com Firebase</string>
+    <string name="falha_conexao">Não Foi Possivel Realizar A Operação Falha Na Conexão</string>
+    <string name="facaLoguin">FAÇA LOGIN</string>
+    <string name="zoa">É nois que avoua</string>
+    <string name="seu_nome">Seu Nome</string>
+    <string name="mostrar_resultado">Mostrar Resultado</string>
+    <string name="finalizado">FINALIZADO</string>
+    <string name="todo">TODO</string>
+    <string name="continuar">CONTINUAR</string>
+    <string name="direitos">DIREITOS RESERVADOS
+        , O usuário reconhece que (a) o Software contém informações reservadas e confidenciais protegidas por leis
+        de propriedade intelectual aplicáveis e outras leis, e Denys Fernandes é proprietário de todos os direitos,
+        títulos e participações referentes ao Software e a qualquer outro software fornecido junto com o Software,
+        incluindo, sem limitação, todos os Direitos de Propriedade Intelectual vinculados ao Software.
+        \"Direitos de Propriedade Intelectual\" significa todo e qualquer direito existente periodicamente sob
+        as leis de patente, de direito autoral, de segredo comercial, de marca comercial, de concorrência desleal
+        e todos os outros direitos proprietários, bem como sob todos os aplicativos, renovações, extensões e
+        restaurações decorrentes, agora ou doravante vigentes no mundo inteiro. O usuário concorda que não
+        fará nem permitirá a terceiros fazer o seguinte:
+        copiar, vender, licenciar, distribuir, transferir, modificar, adaptar,
+        traduzir, preparar obras derivadas, descompilar, fazer engenharia reversa,
+        desmontar ou tentar obter o código-fonte do Software, salvo havendo eventual permissão;
+        tomar qualquer providência para burlar ou anular as regras de segurança ou utilização
+        de conteúdo fornecidas, implementadas ou impostas por qualquer funcionalidade (incluindo, sem
+        limitação, a funcionalidade de gerenciamento de direitos digitais) oferecida no Software;
+        usar o Software para acessar, copiar, transferir, transcodificar ou retransmitir conteúdo
+        violando qualquer lei ou os direitos de terceiros; ou remover, ocultar ou alterar avisos de
+        direito autoral, de marca registrada ou outros avisos de direitos proprietários ou contidos no Software
+        ou acessados em conjunto com o Software.</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#efefef</color>
+    <color name="colorPrimaryDark">#515050</color>
+    <color name="colorAccent">#efefef</color>
+    <color name="cinzao">#eaeaea</color>
+    <color name="transp">#00ffffff</color>
+    <color name="brk">#ffffff</color>
+    <color name="aklsda">#e2e2e2</color>
+    <color name="azulgrad">#2fcdfe</color>
+    <color name="white">#FFFFFF</color>
+    <color name="azure">#F0FFFF</color>
+    <color name="roxograd">#bf5aff</color>
+    <color name="black">#000000</color>
+</resources>
+
